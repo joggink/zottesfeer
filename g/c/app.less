@@ -1,0 +1,54 @@
+body{
+	background: #eee;
+}
+
+header[role="banner"]{
+	text-align: center;
+	nav{
+		margin: 1em 0 .5em;
+		text-align: center;
+		transition: text-align .2s;
+	}
+}
+
+.feedthehorse{
+	>li{
+		background: #fff;
+		position: relative;
+		border-radius: 5px;
+		&.twitter{
+			background: #fff;
+		}
+		&.instagram{
+			// background: beige;
+		}
+		.meta{
+			display: block;
+			padding: 5px 10px;
+			.avatar{
+				margin-right: 1em;
+			}
+			.author{
+
+			}
+		}
+		.cnt{
+			padding: 10px 20px;
+		}
+		footer{
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			display: none;
+		}
+	}
+}
+
+@media all and (min-width: 768px){
+	header[role="banner"]{
+		text-align: left;
+		nav{
+			text-align: right;
+		}
+	}
+}
