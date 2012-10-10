@@ -144,7 +144,7 @@ require 'app.php';
   </div>
 </div>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="g/j/jquery.isotope.js"></script>
+  <script src="g/j/jquery.masonry.js"></script>
   <script src="g/j/bootstrap.min.js"></script>
   <script src="g/j/app.js"></script>
   <script type="text/javascript">
