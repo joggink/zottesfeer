@@ -6,6 +6,7 @@ $data = array();
 $json = array(
 	"twitter"        =>    "http://search.twitter.com/search.json?q=zottesfeer",
 	"instagram"		 =>	   "https://api.instagram.com/v1/tags/zottesfeer/media/recent?client_id=8055d947e80c46e99ff0f8556a6bdbb3",
+	// "youtube"		 =>    "http://gdata.youtube.com/feeds/base/videos?q=zotte+sfeer&alt=json&client=ytapi-youtube-search&v=2"
 	// "flickr"		 =>	   "http://api.flickr.com/services/feeds/photos_public.gne?text=zotte%2Bsfeer&format=json"
 );
 
@@ -14,7 +15,7 @@ foreach($json as $type => $url){
 
 	$tdata = file_get_contents($url);
 	$tempdata[$type] = json_decode($tdata);
-	if ($type == 'flickr'){
+	if ($type == 'youtube'){
 		echo '<pre>';
 		print_r(json_decode($tdata));
 		echo '</pre>';
