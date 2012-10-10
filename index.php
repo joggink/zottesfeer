@@ -30,7 +30,12 @@ require 'app.php';
 <body>
 <div class="container-fluid">
   <header role="banner" class="row-fluid">
-    <h1 class="span6">#zottesfeer</h1>
+    <hgroup class="span6">
+      <a href="./">
+        <h1 class="hidden">#zottesfeer</h1>
+        <img src="g/i/zottesfeer.png" alt="Zotte sfeer logo" />
+      </a>
+    </hgroup>
     <nav class="span6">
       <div class="btn-group">
         <button class="btn active">Grid</button>
