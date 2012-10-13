@@ -63,3 +63,84 @@ header[role="banner"]{
 		}
 	}
 }
+
+/* super secret #zottesfeer easter egg
+ * CSS animated rainbow dividers of awesome
+ * by Chris Heilmann @codepo8 and Lea Verou @leaverou
+**/
+@-moz-keyframes supersecret {
+  from { background-position:top left; }
+  to {background-position:top right; }
+}
+@-webkit-keyframes supersecret {
+  from { background-position:top left; }
+  to { background-position:top right; }
+}
+@-o-keyframes supersecret {
+  from { background-position:top left; }
+  to { background-position:top right; }
+}
+@-ms-keyframes supersecret {
+  from { background-position:top left; }
+  to { background-position:top right; }
+}
+@keyframes supersecret {
+  from { background-position:top left; }
+  to { background-position:top right; }
+}
+
+.zottesfeer{
+  background-image:-webkit-linear-gradient( left, red, orange, yellow, green,
+                                          blue, indigo, violet, indigo, blue,
+                                          green, yellow, orange, red );
+  background-image:-moz-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:-o-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:-ms-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  -moz-animation:supersecret 2.5s forwards linear infinite;
+  -webkit-animation:supersecret 2.5s forwards linear infinite;
+  -o-animation:supersecret 2.5s forwards linear infinite;
+  -ms-animation:supersecret 2.5s forwards linear infinite;
+  animation:supersecret 2.5s forwards linear infinite;
+  background-size:50% auto;
+}
+.zottesfeer .feedthehorse{
+	-moz-perspective:1000px;
+	-moz-transform-style: preserve-3d;
+	-webkit-perspective:1000px;
+	-webkit-transform-style: preserve-3d;
+	-o-perspective:1000px;
+	-o-transform-style: preserve-3d;
+	-ms-perspective:1000px;
+	-ms-transform-style: preserve-3d;
+	perspective:1000px;
+	transform-style: preserve-3d;
+}
+.zottesfeer .feedthehorse li{
+	-moz-transition:1s ease all;
+	-webkit-transition:1s ease all;
+	-o-transition:1s ease all;
+	-ms-transition:1s ease all;
+	transition:1s ease all;
+
+	-moz-transform:rotateZ(180deg);
+	-webkit-transform:rotateZ(180deg);
+	-o-transform:rotateZ(180deg);
+	-ms-transform:rotateZ(180deg);
+	transform:rotateZ(180deg);
+}
+.zottesfeer .feedthehorse li:hover{
+	-moz-transform:rotateZ(-180deg);
+	-webkit-transform:rotateZ(-180deg);
+	-o-transform:rotateZ(-180deg);
+	-ms-transform:rotateZ(-180deg);
+	transform:rotateZ(-180deg);
+}

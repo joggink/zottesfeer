@@ -43,7 +43,7 @@ require 'app.php';
       </div>
     </nav>
   </header>
-  
+
   <div role="main" class="row-fluid">
     <ul class="feedthehorse thumbnails">
 
@@ -146,6 +146,7 @@ require 'app.php';
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="g/j/jquery.masonry.js"></script>
   <script src="g/j/bootstrap.min.js"></script>
+  <script src="g/j/konami.js"></script>
   <script src="g/j/app.js"></script>
   <script type="text/javascript">
 
