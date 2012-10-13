@@ -12,10 +12,20 @@ header[role="banner"] nav {
   text-align: center;
   transition: text-align 0.2s;
 }
+.feedthehorse {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.feedthehorse .masonry-brick {
+  position: static !important;
+}
 .feedthehorse > li {
+  margin: 1em 0;
   background: #fff;
-  position: relative;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .feedthehorse > li.twitter {
   background: #fff;
@@ -31,10 +41,10 @@ header[role="banner"] nav {
   padding: 10px 20px;
 }
 .feedthehorse > li footer {
-  position: absolute;
-  top: 5px;
-  right: 5px;
   display: none;
+}
+.nojs .feedthehorse {
+  display: block;
 }
 .avatar:hover,
 .avatar:focus {
@@ -46,6 +56,14 @@ header[role="banner"] nav {
   }
   header[role="banner"] nav {
     text-align: right;
+  }
+  .feedthehorse .masonry-brick {
+    position: absolute !important;
+  }
+  .feedthehorse > li {
+    float: left;
+    margin: 1em;
+    width: 300px;
   }
 }
 /* super secret #zottesfeer easter egg
@@ -123,16 +141,16 @@ header[role="banner"] nav {
   -o-transition: 1s ease all;
   -ms-transition: 1s ease all;
   transition: 1s ease all;
-  -moz-transform: rotatez(180deg);
-  -webkit-transform: rotatez(180deg);
-  -o-transform: rotatez(180deg);
-  -ms-transform: rotatez(180deg);
-  transform: rotatez(180deg);
+  -moz-transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 .zottesfeer .feedthehorse li:hover {
-  -moz-transform: rotatez(0);
-  -webkit-transform: rotatez(0);
-  -o-transform: rotatez(0);
-  -ms-transform: rotatez(0);
-  transform: rotatez(0);
+  -moz-transform: rotateZ(0);
+  -webkit-transform: rotateZ(0);
+  -o-transform: rotateZ(0);
+  -ms-transform: rotateZ(0);
+  transform: rotateZ(0);
 }

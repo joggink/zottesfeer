@@ -45,13 +45,13 @@ require 'app.php';
   </header>
 
   <div role="main" class="row-fluid">
-    <ul class="feedthehorse thumbnails">
+    <ul class="feedthehorse">
 
       <?php
 
       foreach($data as $timestamp => $item){
         foreach($item as $social => $idata){
-          echo '<li class="' . $social . ' span3">';
+          echo '<li class="' . $social . '">';
           echo '<article>';
 
           switch($social){
@@ -144,7 +144,6 @@ require 'app.php';
   </div>
 </div>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="g/j/jquery.masonry.js"></script>
   <script src="g/j/bootstrap.min.js"></script>
   <script src="g/j/konami.jquery.js"></script>
   <script src="g/j/app.js"></script>

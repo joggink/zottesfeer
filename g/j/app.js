@@ -5,6 +5,18 @@ var zottesfeer = (function (window, document, $, undefined) {
     $(document).bind('konami',function() {
       document.body.classList.add('zottesfeer');
     });
+
+    $(window).load(function(){
+    	$('.feedthehorse')
+    		.fadeIn('fast')
+	    	.masonry({
+	    		itemSelector: 'li',
+				animationOptions: {
+					duration: 400
+				}
+	    	});
+    })
+
   };
 
   return my;

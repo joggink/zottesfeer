@@ -17,10 +17,18 @@ header[role="banner"]{
 }
 
 .feedthehorse{
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	.masonry-brick{
+		position: static !important;
+	}
 	>li{
+		margin: 1em 0;
 		background: #fff;
-		position: relative;
 		border-radius: 5px;
+		box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 		&.twitter{
 			background: #fff;
 		}
@@ -41,11 +49,13 @@ header[role="banner"]{
 			padding: 10px 20px;
 		}
 		footer{
-			position: absolute;
-			top: 5px;
-			right: 5px;
 			display: none;
 		}
+	}
+}
+.nojs{
+	.feedthehorse{
+		display: block;
 	}
 }
 .avatar{
@@ -60,6 +70,16 @@ header[role="banner"]{
 		text-align: left;
 		nav{
 			text-align: right;
+		}
+	}
+	.feedthehorse{
+		.masonry-brick{
+			position: absolute !important;
+		}
+		>li{
+			float: left;
+			margin: 1em;
+			width: 300px;
 		}
 	}
 }
