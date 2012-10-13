@@ -2,11 +2,9 @@ var zottesfeer = (function (window, document, $, undefined) {
   var my = {};
 
   my.init = function () {
-    var konami = new Konami();
-    konami.onSuccess = function () {
+    $(document).bind('konami',function() {
       document.body.classList.add('zottesfeer');
-    };
-    konami.init();
+    });
   };
 
   return my;
