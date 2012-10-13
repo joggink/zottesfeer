@@ -130,9 +130,9 @@ header[role="banner"] nav {
   transform: rotatez(180deg);
 }
 .zottesfeer .feedthehorse li:hover {
-  -moz-transform: rotatez(-180deg);
-  -webkit-transform: rotatez(-180deg);
-  -o-transform: rotatez(-180deg);
-  -ms-transform: rotatez(-180deg);
-  transform: rotatez(-180deg);
+  -moz-transform: rotatez(0);
+  -webkit-transform: rotatez(0);
+  -o-transform: rotatez(0);
+  -ms-transform: rotatez(0);
+  transform: rotatez(0);
 }
