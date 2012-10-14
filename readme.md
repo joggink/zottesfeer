@@ -7,6 +7,5 @@
 - Youtube feed fixen
 - Twitter weergave aanpassen -> username / hashtags clickable
 - Map implementeren
-- Design pimpen (vooral grid layout trekt op geen kluten)
+- Design pimpen
 - PHP optimaliseren
-- Easter egg on konami code
