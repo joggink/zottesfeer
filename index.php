@@ -91,7 +91,7 @@ require 'app.php';
 
               echo '<div class="cnt">';
               echo '<figure>';
-              echo '<img src="' . $idata->images->low_resolution->url . '" class="img-rounded" />';
+              echo '<a href="' . $idata->link . '"><img src="' . $idata->images->low_resolution->url . '" class="img-rounded" /></a>';
               echo '<figcaption>' . $idata->caption->text . '</figcaption';
               echo '</figure>';
               echo '</div>';
