@@ -74,10 +74,7 @@ header[role="banner"] nav {
   margin: 0;
 }
 .feedthehorse > li.instagram .cnt figure a img {
-  border: 1px solid transparent;
-}
-.feedthehorse > li.instagram .cnt figure a:hover {
-  border-color: #999;
+  border-width: 0;
 }
 .feedthehorse > li.instagram .cnt figcaption {
   display: block;
