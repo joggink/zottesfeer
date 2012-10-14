@@ -25,31 +25,66 @@ header[role="banner"]{
 		position: static !important;
 	}
 	>li{
-		margin: 1em 0;
-		background: #fff;
-		border-radius: 5px;
-		box-shadow: 2px 2px 5px rgba(0,0,0,.3);
-		&.twitter{
-			background: #fff;
-		}
-		&.instagram{
-			// background: beige;
-		}
+		margin: 30px 0;
+		border-radius: 2px;
 		.meta{
 			display: block;
 			padding: 5px 10px;
-			.avatar{
-				margin-right: 1em;
+			a{
+				color: #666;
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+					-moz-animation:rainbowhover 2s forwards linear infinite;
+					-webkit-animation:rainbowhover 2s forwards linear infinite;
+					-o-animation:rainbowhover 2s forwards linear infinite;
+					-ms-animation:rainbowhover 2s forwards linear infinite;
+					animation:rainbowhover 2s forwards linear infinite;
+				}
 			}
-			.author{
-
+			img{
+				max-width: 48px;
+				max-height: 48px;
+				box-shadow: 0 0 0 2px #fff,
+							0 0 2px 4px #aaa;
+				margin-right: 10px;
 			}
 		}
 		.cnt{
-			padding: 10px 20px;
+			background: #fff;
+			padding: 10px;
+			margin: 10px;
+			-webkit-filter: drop-shadow(5px 5px 10px rgba(0,0,0,.3));
 		}
-		footer{
-			display: none;
+		&.twitter{
+			.cnt{
+				position: relative;
+				&:after{
+					content: '.';
+					text-indent: -9999em;
+					display: block;
+					width: 0;
+					height: 0;
+					border: 25px solid transparent;
+					border-left-color: #fff;
+					position: absolute;
+					top: -20px;
+					left: 24px;
+					z-index: -1;
+				}
+			}
+		}
+		&.instagram{
+			.cnt{
+				figure{
+					margin: 0;
+				}
+				figcaption{
+					display: block;
+					font-weight: bold;
+					padding: 5px 0;
+				}
+			}
 		}
 	}
 }
@@ -78,7 +113,7 @@ header[role="banner"]{
 		}
 		>li{
 			float: left;
-			margin: 1em;
+			margin: 30px 1em;
 			width: 300px;
 		}
 	}
@@ -163,4 +198,45 @@ header[role="banner"]{
 	-o-transform:rotateZ(0);
 	-ms-transform:rotateZ(0);
 	transform:rotateZ(0);
+}
+
+
+@keyframes rainbowhover
+{
+0%   {color:red}
+20%  {color:orange;}
+40%  {color:yellow;}
+60%  {color:green;}
+80%  {color:blue;}
+100%  {color:violet;}
+}
+
+@-moz-keyframes rainbowhover /* Firefox */
+{
+0%   {color:red}
+20%  {color:orange;}
+40%  {color:yellow;}
+60%  {color:green;}
+80%  {color:blue;}
+100%  {color:violet;}
+}
+
+@-webkit-keyframes rainbowhover /* Safari and Chrome */
+{
+0%   {color:red}
+20%  {color:orange;}
+40%  {color:yellow;}
+60%  {color:green;}
+80%  {color:blue;}
+100%  {color:violet;}
+}
+
+@-o-keyframes rainbowhover /* Opera */
+{
+0%   {color:red}
+20%  {color:orange;}
+40%  {color:yellow;}
+60%  {color:green;}
+80%  {color:blue;}
+100%  {color:violet;}
 }

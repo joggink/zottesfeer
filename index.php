@@ -61,67 +61,40 @@ require 'app.php';
 
               echo '<header class="meta">';
               echo '<a href="' . $profile_url . '" class="avatar">';
-              echo '<img src="' . $idata->profile_image_url . '" class="img-circle" /> ';
+              echo '<img src="' . $idata->profile_image_url . '" class="img-circle avatar" />';
               echo '</a>';
 
               echo '<a href="' . $profile_url . '" class="author">';
               echo $idata->from_user;
-              echo '</a>';
+              echo '</a> said:';
 
               echo '</header>';
 
               echo '<div class="cnt">';
               echo '<p>' . $idata->text . '</p>';
-              echo '<p><small>' . date('d/m/Y H:i', $timestamp) . '</small></p>';
               echo '</div>';
-
-              echo '<footer>';
-              echo '<div class="btn-group">';
-              echo '<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">';
-              echo '<i class="icon-th-list"></i> ';
-              echo '<span class="caret"></span>';
-              echo '</a>';
-              echo '<ul class="dropdown-menu">';
-              echo '<li><a  href="' . $profile_url . '/status/' . $idata->id_str . '">View on twitter</a></li>';
-              echo '<li><a href="#">View on map</a></li>';
-              echo '</ul>';
-              echo '</div>';
-              echo '</footer>';
 
             break;
 
             case 'instagram';
-
-              $profile_url = 'http://twitter.com/' . $idata->from_user;
+              // echo '<pre>';
+              // print_r($idata);
+              // echo '</pre>';
 
               echo '<header class="meta">';
-              echo '<a href="' . $profile_url . '" class="avatar">';
-              echo '<img src="' . $idata->profile_image_url . '" class="img-circle" /> ';
-              echo '</a>';
+              echo '<img src="' . $idata->user->profile_picture . '" class="img-circle" />';
 
-              echo '<a href="' . $profile_url . '" class="author">';
-              echo $idata->from_user;
-              echo '</a>';
+              echo $idata->user->username;
+              echo ' took a picture:';
 
               echo '</header>';
 
               echo '<div class="cnt">';
-              echo '<p><img src="' . $idata->images->low_resolution->url . '" class="img-rounded" /></p>';
-              echo '<p><small>' . date('d/m/Y H:i', $timestamp) . '</small></p>';
+              echo '<figure>';
+              echo '<img src="' . $idata->images->low_resolution->url . '" class="img-rounded" />';
+              echo '<figcaption>' . $idata->caption->text . '</figcaption';
+              echo '</figure>';
               echo '</div>';
-
-              echo '<footer>';
-              echo '<div class="btn-group">';
-              echo '<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">';
-              echo '<i class="icon-th-list"></i> ';
-              echo '<span class="caret"></span>';
-              echo '</a>';
-              echo '<ul class="dropdown-menu">';
-              echo '<li><a  href="' . $profile_url . '/status/' . $idata->id_str . '">View on twitter</a></li>';
-              echo '<li><a href="#">View on map</a></li>';
-              echo '</ul>';
-              echo '</div>';
-              echo '</footer>';
 
             break;
 
