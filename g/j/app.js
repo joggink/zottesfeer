@@ -4,6 +4,8 @@ var zottesfeer = (function (window, document, $, undefined) {
   my.init = function () {
     $(document).bind('konami',function() {
       document.body.classList.add('zottesfeer');
+      var tune = document.body.querySelectorAll('audio')[0];
+      tune.play();
     });
   };
 
@@ -11,7 +13,3 @@ var zottesfeer = (function (window, document, $, undefined) {
 })(window, document, jQuery);
 
 zottesfeer.init();
-
-
-// $(document).ready(function(){
-// });

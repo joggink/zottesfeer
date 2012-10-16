@@ -143,6 +143,13 @@ require 'app.php';
     </ul>
   </div>
 </div>
+
+<audio controls autobuffer>
+  <source src="g/static/telstar.mp3" />
+  <source src="g/static/telstar.ogg" />
+  <p>No html audio for you, sorry!</p>
+</audio>
+
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="g/j/jquery.masonry.js"></script>
   <script src="g/j/bootstrap.min.js"></script>
