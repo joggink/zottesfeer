@@ -88,6 +88,9 @@ header[role="banner"] nav {
 .avatar:focus {
   text-decoration: none;
 }
+audio {
+  display: none;
+}
 @media all and (min-width: 768px) {
   header[role="banner"] {
     text-align: left;
